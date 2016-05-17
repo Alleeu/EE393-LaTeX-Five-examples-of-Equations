@@ -1,0 +1,46 @@
+\title{Five examples of mathematical equations}
+\documentclass[]{article}
+
+\begin{document}
+
+
+\noindent Alan Lee \\
+EE 393	\\
+1228254 
+
+\vspace{5mm}
+\noindent \large \textbf{Equation 1: Per unit base impedance}\\
+\begin{equation}
+Z_{base} = \frac{V_{base}^2}{S_{base}}
+\end{equation}
+Under a given base voltage and base power, you can use equation 1 to solve for the base impedance of that portion of the circuit. For example, a circuit with a base voltage of 34.5 kV and a base power of 100 MVA has a $Z_{base}$ of 11.9025 $\Omega$.\\
+\vspace{5mm}
+
+\noindent \large \textbf{Equation 2: Per unit Impedance}\\
+\begin{equation}
+Z_{pu} = \frac{Z_{acutal}} {Z_{base}}
+\end{equation}
+Using equation 2, it is possible to evaluate the per unit impedance value of an element as long as the actual impedance, $Z_{actual}$, and the base impedance, $Z_{base}$, is known.\\
+\vspace{5mm}
+
+\noindent \large \textbf{Equation 3: Change of base: impedance}\\
+\begin{equation}
+Z_{pu\_new} = Z_{pu\_old}* \frac{Z_{base\_old}}{Z_{base\_new}}
+\end{equation}
+The nominal per unit impedance value of a circuit element might use a base impedance that is different from the base impedance of the circuit being designed so a change of base operation must be done. Equation 3 shows how to obtain the new per unit impedance value.
+\vspace{5mm}
+
+\noindent \large \textbf{Equation 4: Estimated power rating of a transmission line}\\
+\begin{equation}
+S_{rated} = Ampacity * V_{base}
+\end{equation}
+The approximated power rating of a transmission line can be evaluated using equation 4, where ampacity is the current carrying capacity of the line and $V_{base}$ is the base voltage for the line.  
+ \newpage
+
+\noindent \large \textbf{Equation 5: Magnitude of apparent power}\\
+\begin{equation}
+|S| = \sqrt{P^2+Q^2}
+\end{equation}
+Using equation 5 the magnitude of apparent power consumption can be evaluated if the real power consumption, P, and the reactive power consumption, Q, is known. 
+
+\end{document}
